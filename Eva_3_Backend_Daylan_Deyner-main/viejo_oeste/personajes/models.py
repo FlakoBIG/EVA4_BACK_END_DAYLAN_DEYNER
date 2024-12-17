@@ -47,7 +47,7 @@ class caballo(models.Model):
 
 class arma(models.Model):
     nombre = models.CharField(max_length=50)
-    cantidad_balas = models.IntegerField(default=1, help_text="El numero no debe ser menor a 1 balas")
+    cantidad_balas = models.IntegerField(default=1)
     
     TipoBala = [
         ('9mm', '9mm'),
